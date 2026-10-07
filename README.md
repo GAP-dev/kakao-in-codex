@@ -6,7 +6,7 @@ Windows PC에서 실행 중인 카카오톡을 SSH로 사용하는 CLI/TUI.
 
 ![채팅방 목록과 대화 화면](docs/images/main.png)
 
-[동작 영상 보기](docs/media/demo.mp4) — 영상의 대화 본문은 가렸습니다.
+[동작 영상 보기](docs/media/demo.mp4) — 이름과 시간은 남기고 대화 본문만 모자이크 처리했습니다. 영상은 2배속입니다.
 
 <details>
 <summary>테마별 화면</summary>
