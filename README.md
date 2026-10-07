@@ -4,9 +4,18 @@ Windows PC에서 실행 중인 카카오톡을 SSH로 사용하는 CLI/TUI.
 
 카카오톡 로그인은 PC 클라이언트가 처리하고, Windows 에이전트가 채팅창을 읽고 조작합니다. SSH 서버와 터미널 화면은 Docker에서 실행합니다.
 
+![채팅방 목록과 대화 화면](docs/images/main.png)
+
+[동작 영상 보기](docs/media/demo.mp4) — 영상의 대화 본문은 가렸습니다.
+
+<details>
+<summary>테마별 화면</summary>
+
 | Codex | Claude |
 | --- | --- |
 | ![Codex 테마](docs/images/codex.png) | ![Claude 테마](docs/images/claude.png) |
+
+</details>
 
 ## 준비
 
