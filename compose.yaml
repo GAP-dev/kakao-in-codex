@@ -1,0 +1,25 @@
+services:
+  kakao:
+    build: .
+    ports:
+      - "${SSH_BIND:-0.0.0.0}:9961:22"
+      - "127.0.0.1:9962:8787"
+    volumes:
+      - ./secrets/authorized_keys:/run/bridge/authorized_keys:ro
+      - ./secrets/token:/run/bridge/token:ro
+      - ssh-host-keys:/etc/ssh/keys
+      - tui-preferences:/home/kakao/.config/kakao
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; s=socket.create_connection(('127.0.0.1',22),2); s.close(); s=socket.create_connection(('127.0.0.1',8787),2); s.close()"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+volumes:
+  ssh-host-keys:
+  tui-preferences:
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: "${BRIDGE_SUBNET:-10.253.96.0/24}"

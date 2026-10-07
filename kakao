@@ -1,0 +1,3 @@
+#!/bin/sh
+export PYTHONPATH=/app TOKEN_FILE=/run/kakao/token
+exec python -m bridge.styled_tui "$@"

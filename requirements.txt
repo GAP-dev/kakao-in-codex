@@ -1,0 +1,6 @@
+httpx==0.28.1
+textual==8.2.8
+pywinauto==0.6.9; sys_platform == 'win32'
+psutil==7.2.2; sys_platform == 'win32'
+winsdk==1.0.0b10; sys_platform == 'win32'
+Pillow==12.3.0; sys_platform == 'win32'

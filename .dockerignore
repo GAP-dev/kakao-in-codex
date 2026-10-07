@@ -1,0 +1,13 @@
+.venv
+secrets
+__pycache__
+tests
+*.log
+*.pid
+.git
+*.zip
+
+dist
+.env
+.env.*
+.pytest_cache

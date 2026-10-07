@@ -1,0 +1,17 @@
+.venv/
+secrets/
+__pycache__/
+*.py[cod]
+*.log
+*.pid
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+*.zip
+.env
+.env.*
+!.env.example
+VALIDATION.md
+Thumbs.db
+.DS_Store
