@@ -1,4 +1,4 @@
-# Kakao Bridge
+# Kakao in Codex
 
 업무 중 눈치 안 보고 카톡하는 방법.
 
